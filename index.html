@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +13,7 @@
       rel="stylesheet"
     />
 
+    <script src="animation.js" defer></script>
     <script src="index.js" defer></script>
     <title>Суши-Ням</title>
   </head>
@@ -85,15 +87,17 @@
               <img src="./img/rolls/roll_1.png" alt="рол 1" />
             </div>
 
-            <h3 class="item-title">Филадельфия</h3>
+            <h3 class="item_title">Филадельфия</h3>
             <p class="item-text">
               нори, рис для суши, японский хрен васаби, свежий огурец,
               разрезанный на тонкие полоски, крабовое мясо[ (крабовые палочки)
             </p>
             <div class="card__footer">
               <div class="card__info">
-                <div class="price">8</div>
-                <span>$</span>
+                <div class=".card__info_price">
+                  <div class="price">8</div>
+                  <span class="currencyValue">$</span>
+                </div>
                 <div class="weight">360 гр</div>
               </div>
               <button class="card__button">
@@ -107,15 +111,17 @@
               <img src="./img/rolls/Roll-4.png" alt="рол 1" />
             </div>
 
-            <h3 class="item-title">Суши с угрем</h3>
+            <h3 class="item_title">Суши с угрем</h3>
             <p class="item-text">
               Кунжутные семечки, сливочный сыр, огурец, фирменный сырный соус с
               кусочками копчёного угря.
             </p>
             <div class="card__footer">
               <div class="card__info">
-                <div class="price">8</div>
-                <span>$</span>
+                <div class="card__info_price">
+                  <div class="price">8</div>
+                  <span class="currencyValue">$</span>
+                </div>
                 <div class="weight">360 гр</div>
               </div>
               <button class="card__button">
@@ -129,12 +135,14 @@
               <img src="./img/rolls/Roll-2.png" alt="рол 1" />
             </div>
 
-            <h3 class="item-title">Суши стандарт</h3>
+            <h3 class="item_title">Суши стандарт</h3>
             <p class="item-text">Нори, рис, помидор, огурец, сливочный сыр.</p>
             <div class="card__footer">
               <div class="card__info">
-                <div class="price">8</div>
-                <span>$</span>
+                <div class="card__info_price">
+                  <div class="price">8</div>
+                  <span class="currencyValue">$</span>
+                </div>
                 <div class="weight">360 гр</div>
               </div>
               <button class="card__button">
@@ -148,14 +156,16 @@
               <img src="./img/rolls/Roll-6.png" alt="рол 1" />
             </div>
 
-            <h3 class="item-title">Запеченный ролл с курицей</h3>
+            <h3 class="item_title">Запеченный ролл с курицей</h3>
             <p class="item-text">
               Панировка, нори, рис, помидор, соленый огурец, курица.
             </p>
             <div class="card__footer">
               <div class="card__info">
-                <div class="price">8</div>
-                <span>$</span>
+                <div class="card__info_price">
+                  <div class="price">8</div>
+                  <span class="currencyValue">$</span>
+                </div>
                 <div class="weight">360 гр</div>
               </div>
               <button class="card__button">
@@ -169,12 +179,14 @@
               <img src="./img/rolls/Roll-5.png" alt="рол 1" />
             </div>
 
-            <h3 class="item-title">Запеченный ролл с рыбой</h3>
+            <h3 class="item_title">Запеченный ролл с рыбой</h3>
             <p class="item-text">Панировка, нори, рис, помидор, рыба</p>
             <div class="card__footer">
               <div class="card__info">
-                <div class="price">8</div>
-                <span>$</span>
+                <div class="card__info_price">
+                  <div class="price">8</div>
+                  <span class="currencyValue">$</span>
+                </div>
                 <div class="weight">360 гр</div>
               </div>
               <button class="card__button">
@@ -188,14 +200,17 @@
               <img src="./img/rolls/Roll-3.png" alt="рол 1" />
             </div>
 
-            <h3 class="item-title">Калифорния</h3>
+            <h3 class="item_title">Калифорния</h3>
             <p class="item-text">
               Икра Масаго, имитация краба, сливочный сыр, огурец, рис, нори
             </p>
             <div class="card__footer">
               <div class="card__info">
-                <div class="price">8</div>
-                <span>$</span>
+                <div class="card__info_price">
+                  <div class="price">8</div>
+                  <span class="currencyValue">₽</span>
+                </div>
+
                 <div class="weight">360 гр</div>
               </div>
               <button class="card__button">
@@ -210,7 +225,7 @@
         <h2 class="title">Оформление заказа</h2>
         <div class="design-order__content">
           <div class="design-order__img">
-            <img src="./img/box-rolls.png" alt="picture" />
+            <img class="boxRolls" src="./img/box-rolls.png" alt="picture" />
             <div class="glow"></div>
           </div>
 

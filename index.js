@@ -1,13 +1,20 @@
 const btn = document.querySelector(".btn_change_currency");
 
 let price = document.querySelectorAll(".price");
-console.log(price);
+
+let value = document.querySelectorAll(".currencyValue");
+
 const cource = 90;
 
 let currency = true; // доллар
 
 btn.addEventListener("click", function () {
-  console.log(currency);
+  if (currency == true) {
+    btn.textContent = "₽";
+  } else {
+    btn.textContent = "$";
+  }
+
   price.forEach((element) => {
     let priceText = element.textContent; // 8
     if (currency == true) {
@@ -20,6 +27,18 @@ btn.addEventListener("click", function () {
       element.innerHTML = rub;
     }
   });
+
+  value.forEach((elem) => {
+    let symbol = elem.textContent; // $
+
+    if (currency == true) {
+      symbol = "₽";
+      elem.innerHTML = symbol;
+    } else {
+      symbol = "$";
+      elem.innerHTML = symbol;
+    }
+  });
+
   currency = !currency;
-  console.log(currency);
 });
